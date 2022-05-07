@@ -1,5 +1,6 @@
 import express from "express";
 import * as path from "path";
+import usersApi from "./usersApi.js";
 
 const app = express();
 
@@ -13,9 +14,7 @@ app.use((req, res, next) => {
   }
 });
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+app.use("/api/users", usersApi());
 
 app.listen(process.env.PORT || 3000, () => {
   console.log(
