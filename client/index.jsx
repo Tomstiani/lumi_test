@@ -14,7 +14,7 @@ const Application = () => {
 
   return (
     <div>
-      <h1 className="title">Brukere</h1>
+      <h1 className="title">Elever</h1>
       <Modal
         showModal={showModal}
         setShowModal={setShowModal}
