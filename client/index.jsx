@@ -5,10 +5,6 @@ import "./styles.scss";
 const Application = () => {
   const [filter, setFilter] = useState("");
 
-  const handleFilter = (input) => {
-    setFilter(input);
-  };
-
   return (
     <div>
       <h1 className="title">Brukere</h1>
